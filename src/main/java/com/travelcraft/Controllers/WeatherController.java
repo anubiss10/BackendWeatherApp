@@ -15,9 +15,9 @@ public class WeatherController {
     @Value("${visualcrossing.api.key}")
     private String apiKey;
 
-    private final String BASE_URL = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline";
+    private final String BASE_URL = "PUT-HERE-YOUR-VISUALCROSSING-URL";
 
-    @CrossOrigin(origins = "https://travelcraft.netlify.app")
+    @CrossOrigin(origins = "PUT-HERE-YOUR-URL-FRONTEND")
     @GetMapping("/weather")
     public ResponseEntity<String> getWeather(@RequestParam String location, @RequestParam String date) {
         try {
